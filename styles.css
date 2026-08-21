@@ -823,6 +823,52 @@ h3 {
   font-size: 0.9rem;
 }
 
+/* Project page hero */
+
+.project-page-hero {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 6rem 1.4rem 5rem;
+}
+
+.project-page-intro {
+  max-width: 850px;
+}
+
+.project-page-lead {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 1.25rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 2rem;
+}
+
+.project-meta span {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: white;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
 /* Tablet */
 
 @media (max-width: 900px) {
