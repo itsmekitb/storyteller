@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta
+    name="description"
+    content="Behind-the-scenes notes, sketches, songs, and production updates from an original illustrated musical."
+  />
+
+  <title>Making the Illustrated Musical — Your Name</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+
+      <a
+        class="wordmark"
+        href="../index.html"
+        aria-label="Return to homepage"
+      >
+        YOUR NAME
+      </a>
+
+      <nav class="site-nav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#published">Published</a>
+        <a href="../index.html#in-progress">In Progress</a>
+        <a href="../index.html#behind-scenes">Behind the Scenes</a>
+        <a href="../index.html#live">Live Sessions</a>
+        <a href="../index.html#contact">Get in Touch</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <section class="project-page-hero">
+
+      <div class="project-page-intro">
+
+        <a
+          class="back-link"
+          href="../index.html#behind-scenes"
+        >
+          ← Back to Behind the Scenes
+        </a>
+
+        <p class="eyebrow">
+          Project Journal
+        </p>
+
+        <h1>
+          Making the illustrated musical
+        </h1>
+
+        <p class="project-page-lead">
+          Songs, sketches, visual experiments, production notes,
+          and updates from the ongoing process of building an
+          original illustrated musical inspired by family history.
+        </p>
+
+        <div class="project-meta">
+          <span><strong>Status:</strong> Act 2 in progress</span>
+          <span><strong>Form:</strong> Illustrated musical</span>
+          <span><strong>Current focus:</strong> Expanding the world</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="project-page-two-column">
+
+        <div>
+          <p class="eyebrow">About the Project</p>
+
+          <h2>
+            A story that refused to stay in one medium.
+          </h2>
+        </div>
+
+        <div class="project-prose">
+
+          <p class="lead">
+            This project grew out of family history and gradually became
+            something stranger and more ambitious: part musical, part
+            illustrated film, part visual memory piece.
+          </p>
+
+          <p>
+            It combines original songs, spoken scenes, handmade digital
+            illustration, symbolic color, sparse movement, and a visual world
+            that becomes increasingly unstable as buried truths begin to surface.
+          </p>
+
+          <p>
+            I’m documenting the process here as it develops — including
+            sketches, finished scenes, revisions, musical decisions,
+            visual experiments, production discoveries, and occasional
+            creative dead ends.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="section-heading">
+        <span>01</span>
+
+        <div>
+          <p class="eyebrow">Project Journal</p>
+          <h2>Latest notes from the work.</h2>
+        </div>
+      </div>
+
+
+      <div class="journal-list">
+
+        <article class="journal-entry">
+
+          <div class="journal-date">
+            August 2026
+          </div>
+
+          <div class="journal-content">
+
+            <p class="work-type">
+              Act 2
+            </p>
+
+            <h3>
+              Building a bigger world
+            </h3>
+
+            <p>
+              Act 2 is opening the story outward. I’m adding town scenes,
+              more environmental detail, and loose outline-only background
+              figures so the world feels more populated without losing the
+              handmade visual language established in Act 1.
+            </p>
+
+            <p>
+              The goal is to make the environment feel broader and more alive,
+              while keeping the principal characters visually distinct through
+              their saturated color coding.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="journal-entry">
+
+          <div class="journal-date">
+            Summer 2026
+          </div>
+
+          <div class="journal-content">
+
+            <p class="work-type">
+              Milestone
+            </p>
+
+            <h3>
+              Finishing Act 1
+            </h3>
+
+            <p>
+              After several intense weeks of writing, recording, illustrating,
+              and editing, Act 1 became a complete audiovisual piece running
+              a little over half an hour.
+            </p>
+
+            <p>
+              Completing it also clarified the visual rules of the project:
+              muted watercolor environments, highly saturated principal
+              characters, repeated compositions, symbolic color, and selective
+              moments of distortion as the story becomes more unstable.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="journal-entry">
+
+          <div class="journal-date">
+            Early Development
+          </div>
+
+          <div class="journal-content">
+
+            <p class="work-type">
+              Visual language
+            </p>
+
+            <h3>
+              Giving each character a color
+            </h3>
+
+            <p>
+              One of the earliest visual choices was assigning each major
+              character a specific saturated color while keeping most of the
+              surrounding world in muted greys.
+            </p>
+
+            <p>
+              What began as an aesthetic choice quickly became part of the
+              storytelling itself, letting relationships, memory, absence,
+              and emotional shifts register visually without relying on
+              conventional animation.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="section-heading">
+        <span>02</span>
+
+        <div>
+          <p class="eyebrow">From the Process</p>
+          <h2>Sketches, stills, and visual experiments.</h2>
+        </div>
+      </div>
+
+      <div class="project-gallery">
+
+        <div class="gallery-placeholder gallery-blue">
+          <span>Add a still or sketch here</span>
+        </div>
+
+        <div class="gallery-placeholder gallery-purple">
+          <span>Add another image here</span>
+        </div>
+
+        <div class="gallery-placeholder gallery-teal">
+          <span>Add another image here</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="section project-page-footer">
+
+      <p class="eyebrow">
+        Back to the main site
+      </p>
+
+      <h2>
+        See what else I’m making.
+      </h2>
+
+      <a
+        class="button primary"
+        href="../index.html#in-progress"
+      >
+        View works in progress
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Kit Berry.</p>
+    <p>Built with caffeine, curiosity, and an unreasonable number of open tabs.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+
+</body>
+</html>
