@@ -913,6 +913,38 @@ h3 {
   font-size: 0.9rem;
 }
 
+.quote-card {
+  min-height: 220px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.5rem;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(36, 89, 255, 0.08),
+      rgba(122, 60, 255, 0.08),
+      rgba(0, 169, 165, 0.08)
+    );
+
+  text-align: center;
+}
+
+.quote-text {
+  margin: 0;
+
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1.45;
+
+  color: var(--ink);
+}
+
 /* Tablet */
 
 @media (max-width: 900px) {
