@@ -877,6 +877,35 @@ h3 {
   display: block;
 }
 
+.gallery-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.gallery-card img {
+  width: 100%;
+  max-height: 220px;
+
+  object-fit: contain;
+
+  border-radius: 12px;
+
+  background: var(--paper-2);
+}
+
+.gallery-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 /* Tablet */
 
 @media (max-width: 900px) {
