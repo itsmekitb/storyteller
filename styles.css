@@ -877,6 +877,13 @@ h3 {
   display: block;
 }
 
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
 .gallery-card {
   background: white;
   border: 1px solid var(--line);
