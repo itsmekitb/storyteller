@@ -1,0 +1,48 @@
+name: Social Post Bot
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+      timezone: "America/Los_Angeles"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Run social posting bot
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          INSTAGRAM_ID: ${{ secrets.INSTAGRAM_ID }}
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+        run: python social_bot.py
+
+      - name: Save posting status
+        run: |
+          if git diff --quiet; then
+            echo "No changes to save."
+            exit 0
+          fi
+
+          git config user.name "social-post-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          git add posts.json
+          git commit -m "Mark scheduled social post as published"
+          git push
