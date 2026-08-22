@@ -1,0 +1,10 @@
+[
+  {
+    "id": "test-001",
+    "platforms": ["instagram"],
+    "caption": "API test post — the robot lives.",
+    "image_url": "https://itsmekitb.github.io/storyteller/116.png",
+    "scheduled_at": "2026-08-22T10:00:00-07:00",
+    "posted": false
+  }
+]
