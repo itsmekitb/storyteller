@@ -12,6 +12,9 @@ FACEBOOK_PAGE_ID = os.environ["FACEBOOK_PAGE_ID"]
 
 
 def post_to_instagram(caption, image_url):
+    import time
+
+    # Step 1: Create the media container
     create_url = (
         f"https://graph.facebook.com/{GRAPH_VERSION}/"
         f"{INSTAGRAM_ID}/media"
@@ -26,12 +29,54 @@ def post_to_instagram(caption, image_url):
         },
         timeout=30,
     )
+
     if not create_response.ok:
-        print("Meta error:", create_response.text)
+        print("Meta create error:", create_response.text)
         create_response.raise_for_status()
 
     creation_id = create_response.json()["id"]
+    print("Created Instagram container:", creation_id)
 
+    # Step 2: Wait for Instagram to finish processing it
+    status_url = (
+        f"https://graph.facebook.com/{GRAPH_VERSION}/"
+        f"{creation_id}"
+    )
+
+    for attempt in range(12):
+        status_response = requests.get(
+            status_url,
+            params={
+                "fields": "status_code",
+                "access_token": ACCESS_TOKEN,
+            },
+            timeout=30,
+        )
+
+        if not status_response.ok:
+            print("Meta status error:", status_response.text)
+            status_response.raise_for_status()
+
+        status_code = status_response.json().get("status_code")
+        print(f"Container status: {status_code}")
+
+        if status_code == "FINISHED":
+            break
+
+        if status_code == "ERROR":
+            raise RuntimeError(
+                f"Instagram container processing failed: "
+                f"{status_response.text}"
+            )
+
+        time.sleep(5)
+
+    else:
+        raise RuntimeError(
+            "Instagram container did not finish processing within 60 seconds."
+        )
+
+    # Step 3: Publish the finished container
     publish_url = (
         f"https://graph.facebook.com/{GRAPH_VERSION}/"
         f"{INSTAGRAM_ID}/media_publish"
@@ -45,7 +90,12 @@ def post_to_instagram(caption, image_url):
         },
         timeout=30,
     )
-    publish_response.raise_for_status()
+
+    if not publish_response.ok:
+        print("Meta publish error:", publish_response.text)
+        publish_response.raise_for_status()
+
+    print("Instagram post published:", publish_response.json())
 
     return publish_response.json()
 
