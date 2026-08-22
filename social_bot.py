@@ -26,6 +26,8 @@ def post_to_instagram(caption, image_url):
         },
         timeout=30,
     )
+    if not create_response.ok:
+    print("Meta error:", create_response.text)
     create_response.raise_for_status()
 
     creation_id = create_response.json()["id"]
