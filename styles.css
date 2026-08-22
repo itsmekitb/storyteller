@@ -993,6 +993,10 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .project-gallery {
+  grid-template-columns: 1fr;
+}
+
   .site-footer {
     flex-direction: column;
   }
