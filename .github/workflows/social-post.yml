@@ -2,7 +2,7 @@ name: Social Post Bot
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/57 * * * *"
       timezone: "America/Los_Angeles"
 
   workflow_dispatch:
